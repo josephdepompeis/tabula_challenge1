@@ -1,0 +1,15 @@
+Reflect (in your app's README): The view does an if params[:name] check. This is a code smell. How could you do this better?
+
+
+I think the better way to do this would be to have 2 different pages rather than 1 page for 2 purposes.
+You would get better analytics if there were 2 pages. Not sure how else to display 2 different things based on this point.
+
+
+ACTUALLY,
+
+I would probably make another action in the controller, and post to the other action and have that display after a form is submitted.
+If that makes sense.
+
+  post 'home/"new-action-here"'
+
+  
